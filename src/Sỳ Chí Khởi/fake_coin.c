@@ -8,11 +8,14 @@ int findFakeCoin(int coins[], int left, int right) {
    if (left == right) {
       return left;
    }
-
-   int n = right - left + 1;
-   int k = n / 3;
-   if (n % 3 != 0 && n % 3 != 1) k++; 
-   if (n % 3 == 1 && n > 1) k = n / 3;
+   // chia 3 nhóm để trị
+   int n = right - left + 1;    //số đồng xu
+   int k = n / 3;               //mỗi nhóm có k xu
+   
+   if (n % 3 != 0 && n % 3 != 1) 
+      k++; 
+   if (n % 3 == 1 && n > 1) 
+      k = n / 3;
 
    int group1_end = left + k - 1;
    int group2_start = left + k;
@@ -20,9 +23,14 @@ int findFakeCoin(int coins[], int left, int right) {
 
    int weight1 = 0, weight2 = 0;
    int i;
-   for (i = left; i <= group1_end; i++) weight1 += coins[i];
-   for (i = group2_start; i <= group2_end; i++) weight2 += coins[i];
 
+   //tính trọng lượng của 2 nhóm
+   for (i = left; i <= group1_end; i++) 
+      weight1 += coins[i];
+   for (i = group2_start; i <= group2_end; i++) 
+      weight2 += coins[i];
+   
+   //so sánh trọng lượng của hai nhóm
    if (weight1 < weight2) {
       return findFakeCoin(coins, left, group1_end);
    } else if (weight1 > weight2) {
@@ -43,3 +51,9 @@ int main() {
 
    return 0;
 }
+
+/*dry-run
+   -lần cân 1st:
+      left=0 right=8
+      n=8-0+1=9 
+      k=9/3=3
