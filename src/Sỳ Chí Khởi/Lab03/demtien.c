@@ -16,7 +16,7 @@ void doiTien(int A[], int n, int money) {
 }
 
 int main() {
-    int A[] = {10, 5, 2, 1}; // Menh gia phai sap xep giam dan
+    int A[] = {10, 5, 2, 1}; // mệnh giá phải sắp xếp giảm dần
     int n = sizeof(A) / sizeof(A[0]);
     int money = 18;
     
