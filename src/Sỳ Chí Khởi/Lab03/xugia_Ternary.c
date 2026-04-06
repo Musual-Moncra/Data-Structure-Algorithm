@@ -1,4 +1,4 @@
-// Cau truc du lieu va Giai thuat - Tim dong xu gia
+// Cau truc du lieu va Giai thuat - Tim dong xu gia (Chia 3)
 // Giang vien: Thay Vu Dinh Khoi
 // Ma so sinh vien: 22502168
 
@@ -47,8 +47,6 @@ int main() {
    int index = findFakeCoin(coins, 0, n - 1);
    
    printf("Dong xu gia nam tai vi tri chi so: %d\n", index);
-   printf("Gia tri cua dong xu do la: %d\n", coins[index]);
-
    return 0;
 }
 
@@ -57,7 +55,7 @@ int main() {
       left=0 right=8
       n=8-0+1=9 
       k=9/3=3
+......
+lười chạy tiếp r~
 
-
-      
 */
