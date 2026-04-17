@@ -1,7 +1,4 @@
 <div align="center">
-
-![Repo Banner](file:///Users/musual/.gemini/antigravity/brain/becfe481-98bc-4f78-bdfa-08e490652760/repo_banner_1773998921701.png)
-
 # 🚀 Data-Structure-Algorithm
 
 [![Language](https://img.shields.io/badge/Language-C-orange.svg)](https://en.wikipedia.org/wiki/C_(programming_language))

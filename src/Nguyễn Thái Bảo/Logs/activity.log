@@ -1,0 +1,18 @@
+# Nhật ký học tập - Nguyễn Thái Bảo
+
+**Thời gian:** Tuần 4 & Tuần 5
+**Môn học:** Cấu trúc dữ liệu & Giải thuật
+
+### Những công việc mình đã hoàn thành:
+1. Mình đã tham khảo PDF yêu cầu bài tập của Lab 05 (`Week4.pdf` & `Week5.pdf`). Cả hai phần đều tập trung mạnh vào các kỹ năng xử lý thuật toán sắp xếp (Sorting).
+2. Mình đã triển khai mã nguồn tại `src/Nguyễn Thái Bảo/Gemini/Week4/main.c` (Dùng chung kiến thức cho cả hai tuần vì đây là một quá trình liên tục rèn luyện). Code xử lý một file danh sách sinh viên `students.txt` với 4 bài thực hành rất hay:
+   - Cơ bản là làm quen với **Bubble Sort** cho việc sắp xếp điểm giảm dần (Bài 1) và **Selection Sort** sắp xếp tên theo chữ cái A-Z (Bài 2).
+   - Bài 3 thú vị hơn một chút, mình phải tự tư duy việc xử lý hai tiêu chuẩn đồng thời: Tên tăng dần, nếu lỡ trùng tên nhau thì lôi điểm ra xét từ cao xuống thấp. Mình phải viết kèm thêm logic để bỏ qua việc phân biệt hoa/thường (Dùng mảng tạm lower-case).
+   - Tuyệt vời nhất là Bài 4: Mình được ứng dụng **Con trỏ hàm (Function Pointer)**. Thực sự nó giải quyết rất tốt vấn đề phải copy-paste thuật toán sort ra nhiều hàm khác nhau, giờ code của mình gom chỉ còn 1 logic sắp xếp tổng kết hợp menu tương tác xịn xò đi kèm. 
+
+### Khó khăn & Bài học rút ra:
+- Khúc debug về mảng chuỗi trong C tốn chút thời gian, vì C không trực tiếp gán chuỗi hay tự cover vụ chữ thường/hoa dễ như C++ hay Python.
+- Hiểu sâu hơn về cách truyền hàm như một tham số (đây là nền tảng để sau mình học Callback func hoặc hiểu logic `qsort` thư viện C).
+
+### Tình trạng hệ thống hiện tại:
+Tất cả code mình đã để gọn gàng ở trong hai folder học tập của mình là `src/Nguyễn Thái Bảo/Gemini/Week4` và `src/Nguyễn Thái Bảo/Gemini/Week5`. Tự tin nộp bài mLearning luôn!

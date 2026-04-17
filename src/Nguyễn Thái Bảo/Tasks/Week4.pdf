@@ -1,0 +1,42 @@
+Cấu trúc dữ liệu & giải thuật Bài tập thực hành Trang 1/2
+Lab 05
+Sắp xếp (phần I)
+A. Chuẩn bị
+- Đọc kỹ slide bài giảng
+- Tài liệu tham khảo [1] Robert Sedgewick. (1998). Algorithms in C, Part 1-4, Third
+Edition. Addison-Wesley
+B. Hướng dẫn
+1. Tạo thư mục CTDL-BTTH-TuanX-MSSV (với XX là tuần học, ví dụ Tuan1, Tuan2,…)
+2. Làm bài & Lưu tất cả file bài làm vào thư mục trên.
+3. Xóa các file exe → Nén thư mục này → file nén CTDL-BTTH-TuanX-MSSV.zip
+4. Nộp file nén CTDL-BTTH-TuanX-MSSV.zip vào mục “Bài tập thực hành tuần X” trên
+mLearning.
+C. Thực hành
+Bài tập 1.
+Cho cấu trúc file students.txt
+(lưu ý: tên chỉ gồm 1 từ, các cột thông tin cách nhau khoảng trắng).
+123 Binh 7.50
+124 An 7.50
+125 Khoa 8.50
+126 Thanh 9.50
+127 Nguyen 5.50
+128 Mai 6.70
+129 Hung 7.30
+130 Viet 5.90
+Viết chương trình đọc thông tin sinh viên từ tập tin students.txt và sử dụng Bubble sort
+để sắp xếp danh sách sinh viên theo thứ tự giảm dần của cột điểm (score) và xuất ra màn
+hình kết quả sau khi sắp xếp.
+Bài tập 2. (sử dụng lại code bài tập 1)
+Sử dụng thuật toán Chọn trực tiếp (Selection sort), viết thêm hàm sắp xếp danh sách sinh
+viên theo thứ tự tăng dần của cột tên (name) và xuất ra màn hình kết quả sau khi sắp xếp.
+Bài tập 3. (sử dụng lại code bài tập 1, 2)
+Cấu trúc dữ liệu & giải thuật Bài tập thực hành Trang 2/2
+Viết thêm hàm sắp xếp danh sách sinh viên theo thứ tự tăng dần của tên (không phân biệt
+chữ hoa chữ thường), nếu tên giống nhau thì sắp xếp theo thứ tự giảm dần của điểm
+(score).
+Bài tập 4. (**)
+Viết chương trình đọc thông tin sinh viên từ tập tin students.txt và hiển thị menu cho
+phép người dùng chọn cột cần sắp xếp (cột name hoặc score), thứ tự sắp xếp
+(tăng/increasing hoặc giảm/descending), sau đó in danh sách sinh viên sau khi sắp xếp ra
+màn hình và lưu danh sách được sắp xếp vào tập tin students_sorted.txt
+Hint: sử dụng con trỏ hàm (function pointer) để tổng quát việc sắp xếp theo cột bất kỳ.
