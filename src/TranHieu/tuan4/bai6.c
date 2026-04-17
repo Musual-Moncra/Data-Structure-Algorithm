@@ -18,7 +18,7 @@ typedef struct {
 } Student;
 
 int loadStudents(Student students[]) {
-    FILE *f = fopen("students.txt", "r");
+    FILE *f = fopen("src/TranHieu/tuan4/students.txt", "r");
     if (f == NULL) {
         printf("Loi: Khong tim thay file students.txt!\n");
         return 0;
