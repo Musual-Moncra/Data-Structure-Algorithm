@@ -27,7 +27,7 @@ int main() {
     printf("Student list:\n");
     printf("ID\tNAME\tGPA\n");
     for (int i = 0; i < n; i++) {
-        printf("%d\t%s\t%.2f\n", students[i].id, students[i].name, students[i].gpa);
+        printf("ID: %d, NAME: %s, GPA: %.2f\n", students[i].id, students[i].name, students[i].gpa);
     }
 
     return 0;

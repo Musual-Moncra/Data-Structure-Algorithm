@@ -7,6 +7,15 @@ struct Student {
     float gpa;
 };
 
+int searchStudentById(struct Student students[], int n, int searchId) {
+    for (int i = 0; i < n; i++) {
+        if (students[i].id == searchId) {
+            return i;
+        }
+    }
+    return -1;
+}
+
 int main() {
     struct Student students[] = {
         {120, "Binh", 7.50},
@@ -26,17 +35,12 @@ int main() {
     printf("Nhap vao ID can tim: ");
     scanf("%d", &searchId);
     
-    int found = 0;
-    for (int i = 0; i < n; i++) {
-        if (students[i].id == searchId) {
-            printf("Tim thay sinh vien:\n");
-            printf("ID: %d, NAME: %s, GPA: %.2f\n", students[i].id, students[i].name, students[i].gpa);
-            found = 1;
-            break; // Giả sử ID là duy nhất nên tìm thấy là thoát vòng lặp
-        }
-    }
+    int index = searchStudentById(students, n, searchId);
     
-    if (!found) {
+    if (index != -1) {
+        printf("Tim thay sinh vien:\n");
+        printf("ID: %d, NAME: %s, GPA: %.2f\n", students[index].id, students[index].name, students[index].gpa);
+    } else {
         printf("Not found\n");
     }
 
