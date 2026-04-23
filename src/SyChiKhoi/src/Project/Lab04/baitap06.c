@@ -110,7 +110,7 @@ void user_search_menu(struct Student students[], int n) {
 }
 
 int main() {
-    char *filename = "students.txt";
+    char *filename = "../../../resources/students_Lab04.txt";
     int n = count_lines(filename);
     
     if (n == 0) {

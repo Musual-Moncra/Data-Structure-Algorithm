@@ -16,11 +16,13 @@ Thư mục này chuyên dùng để chứa các thuật toán tìm kiếm. Đây
 - **Độ phức tạp**:
   - Time: `O(log N)` - Cực kỳ nhanh!
   - Space: `O(1)` (Ngang O(log N) nếu viết bằng đệ quy do tốn Call Stack).
-- **Tuyệt chiêu cần nhớ**:
-  - Công thức tính `mid` an toàn để chống lỗi tràn số (overflow) ở Java/C++: 
-    `int mid = left + (right - left) / 2;` thay vì `(left + right) / 2`.
-  - Lúc nào biến `left = mid + 1` và `right = mid - 1` để chống vô hạn vòng lặp (infinite loop).
+> [!IMPORTANT]
+> **Tuyệt chiêu cần nhớ**:
+> - Công thức tính `mid` an toàn để chống lỗi tràn số (overflow) ở Java/C++: 
+>   `int mid = left + (right - left) / 2;` thay vì `(left + right) / 2`.
+> - Lúc nào biến `left = mid + 1` và `right = mid - 1` để chống vô hạn vòng lặp (infinite loop).
 
 ## Mẹo áp dụng (Tips)
-- Nếu đề bài bắt tìm kiếm mà cho dữ kiện **thời gian chạy `O(log N)`**, hoặc chèn thêm câu "mảng đã được sắp xếp", 99% họ muốn bạn xài Binary Search!
-- Bạn có thể áp dụng Binary Search cho việc **Quy hoạch động** (Tìm kết quả nhỏ nhất thỏa mãn một điều kiện nào đó) chứ không thuần túy là tìm số trong mảng.
+> [!TIP]
+> - Nếu đề bài bắt tìm kiếm mà cho dữ kiện **thời gian chạy `O(log N)`**, hoặc chèn thêm câu "mảng đã được sắp xếp", 99% họ muốn bạn xài Binary Search!
+> - Bạn có thể áp dụng Binary Search cho việc **Quy hoạch động** (Tìm kết quả nhỏ nhất thỏa mãn một điều kiện nào đó) chứ không thuần túy là tìm số trong mảng.
