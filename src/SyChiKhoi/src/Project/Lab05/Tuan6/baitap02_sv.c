@@ -62,8 +62,23 @@ void load_students(char *filename, Student students[]) {
 
 // sort students by increasing name (Selection sort)
 void sort_by_name(Student s[], int n) {
-    // YOUR CODE HERE...
-    
+    for (int i = 0; i < n - 1; i++) {
+        // Tìm vị trí của tên có thứ tự từ điển nhỏ nhất trong phần chưa sắp xếp
+        int min_idx = i;
+        for (int j = i + 1; j < n; j++) {
+            // strcmp trả về giá trị âm nếu chuỗi 1 nhỏ hơn (đứng trước) chuỗi 2
+            if (strcmp(s[j].name, s[min_idx].name) < 0) {
+                min_idx = j;
+            }
+        }
+        
+        // Đổi chỗ sinh viên có tên đứng trước lên vị trí hiện tại i
+        if (min_idx != i) {
+            Student temp = s[i];
+            s[i] = s[min_idx];
+            s[min_idx] = temp;
+        }
+    }
 }
 
 int main() {
