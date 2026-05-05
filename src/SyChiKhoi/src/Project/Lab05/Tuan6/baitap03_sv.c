@@ -1,4 +1,13 @@
+/*
+Bài tập tuần 5
+Bài tập 1: Dùng Selection sort để sắp xếp danh sách sinh viên theo tăng dần của Name.
+Không phân biệt chữ hoa và chữ thường. Nếu trùng tên, thì sắp xếp theo thứ tự giảm dần của GPA.
+Input: file students.txt
+Output: danh sách sinh viên đã được sắp xếp theo yêu cầu trên.
+Yêu cầu: sinh viên hoàn thành code tại vị trí có comment "YOUR CODE HERE..." trong hàm sort_by_name_gpa()
+*/
 #include <stdio.h>
+#include <string.h>
 
 // Define a Student struct
 typedef struct Student {
@@ -52,11 +61,21 @@ void load_students(char *filename, Student students[]) {
     fclose(f);
 }
 
+// sort students by increasing name (ignore upper case), descending gpa (Selection sort)
+void sort_by_name_gpa(Student s[], int n) {
+    // YOUR CODE HERE...
+    
+}
+
 int main() {
     char *filename = "students.txt";
     int n = count_lines(filename);
     Student students[n];
     printf("Input:\n");
     load_students(filename, students);
+    print_students(students, n);
+    // gọi hàm sắp xếp
+    sort_by_name_gpa(students, n);
+    printf("Sorted Output:\n");
     print_students(students, n);
 }
