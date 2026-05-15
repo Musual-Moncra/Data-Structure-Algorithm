@@ -1,93 +1,204 @@
 <div align="center">
 
-# 🚀 Data Structures & Algorithms (DSA) Workspace
+# 📘 Data Structures & Algorithms — Academic Workspace
 
-[![Language](https://img.shields.io/badge/Language-C/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
-[![Status](https://img.shields.io/badge/Status-In--Progress-success?style=for-the-badge&logo=github)](https://github.com/Musual-Moncra/Data-Structure-Algorithm)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![C](https://img.shields.io/badge/Language-C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![C++](https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)](https://en.wikipedia.org/wiki/C%2B%2B)
+[![Java](https://img.shields.io/badge/Language-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://en.wikipedia.org/wiki/Java_(programming_language))
+[![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)](https://github.com/Musual-Moncra/Data-Structure-Algorithm)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-**Không gian lưu trữ và triển khai các giải thuật, cấu trúc dữ liệu của đội ngũ chúng tôi. Nơi kết nối sự sáng tạo và tư duy lập trình tập thể.**
+> **Nghiên cứu, triển khai và hệ thống hóa các cấu trúc dữ liệu & giải thuật nền tảng trong Khoa học Máy tính.**
 
-[Lộ trình nhóm](#-lộ-trình-học-tập--tiến-độ) • [Cấu trúc dự án](#-cấu-trúc-thư-mục) • [Hướng dẫn](#- hướng-dẫn-sử-dụng) • [Đội ngũ phát triển](#-thành-viên-đóng-góp)
+[Khái quát](#-khái-quát) · [Cấu trúc](#-cấu-trúc-dự-án) · [Thuật toán](#-bảng-tổng-hợp-thuật-toán) · [Hướng dẫn](#-hướng-dẫn-biên-dịch) · [Đội ngũ](#-đội-ngũ-nghiên-cứu)
 
 </div>
 
 ---
 
-## 🌟 Về dự án của chúng tôi
+## 🎓 Khái quát
 
-Dự án này là thành quả của sự phối hợp giữa các thành viên trong nhóm nhằm xây dựng một thư viện mã nguồn chuẩn hóa cho học phần **Cấu trúc dữ liệu và Giải thuật**. Chúng tôi cùng nhau thảo luận, triển khai và tối ưu hóa các bài toán từ cơ bản đến nâng cao trên ngôn ngữ C/C++.
+Repository này là không gian học thuật tập thể, nơi các thành viên cùng nhau **nghiên cứu**, **triển khai** và **tài liệu hóa** các giải thuật cốt lõi của môn học **Cấu trúc dữ liệu & Giải thuật**. Mục tiêu không chỉ dừng lại ở việc viết code chạy đúng — mà còn hướng tới việc xây dựng một **tài liệu tham chiếu chuẩn** cho toàn bộ nhóm.
 
-### 🎯 Mục tiêu chung của nhóm
-- **Xây dựng thư viện chuẩn**: Cùng nhau tạo ra các bộ mã nguồn rõ ràng, dễ hiểu cho các cấu trúc dữ liệu cốt lõi.
-- **Tối ưu hóa giải thuật**: Thảo luận và tìm ra các giải pháp có độ phức tạp thời gian và không gian tốt nhất.
-- **Hệ thống hóa kiến thức**: Tổ chức các bài tập Lab và LeetCode một cách khoa học để dễ dàng tra cứu.
-- **Phát triển kỹ năng nhóm**: Thực hành quy trình làm việc chuyên nghiệp trên GitHub, từ quản lý branch đến giải quyết xung đột mã nguồn.
+### 🎯 Mục tiêu học thuật
+
+| Mục tiêu | Mô tả |
+|:---|:---|
+| **Chuẩn hóa mã nguồn** | Xây dựng các implementation rõ ràng, có chú thích, tuân thủ nguyên tắc Clean Code |
+| **Phân tích độ phức tạp** | Đánh giá Big-O cho từng thuật toán về thời gian và bộ nhớ |
+| **Hệ thống hóa kiến thức** | Tổ chức tài liệu theo module, dễ tra cứu và mở rộng |
+| **Thực hành nhóm** | Rèn luyện quy trình Git, code review và giải quyết conflict |
 
 ---
 
-## 📂 Cấu trúc thư mục
+## 📂 Cấu trúc dự án
 
-Dự án được tổ chức theo các Workspace riêng biệt để mỗi thành viên có không gian sáng tạo nhưng vẫn đảm bảo tính thống nhất chung:
-
-```text
+```
 Data-Structure-Algorithm/
-├── src/
-│   ├── Nguyễn Thái Bảo/     # 📁 Không gian triển khai của Thái Bảo
-│   ├── SyChiKhoi/           # 📁 Không gian triển khai của Chí Khởi
-│   ├── TranHieu/            # 📁 Không gian triển khai của Trần Hiếu
-│   └── Trần Thành Đạt/      # 📁 Không gian triển khai của Thành Đạt
-└── README.md
+│
+├── README.md                          # Tài liệu tổng quan (file này)
+│
+└── src/
+    ├── Nguyễn Thái Bảo/               # Workspace — Thái Bảo
+    │   ├── 01_Recursion/              #   ▸ Đệ quy & ứng dụng
+    │   ├── 02_Searching/              #   ▸ Tìm kiếm (Linear, Binary)
+    │   ├── 03_Sorting/                #   ▸ Sắp xếp (Bubble, Selection, Function Pointer)
+    │   ├── 04_Linked_Lists/           #   ▸ Danh sách liên kết đơn
+    │   ├── 05_Advanced_Topics/        #   ▸ Chủ đề nâng cao
+    │   ├── Documents/                 #   ▸ Tài liệu học thuật
+    │   ├── Storage/                   #   ▸ Ghi chú kỹ thuật
+    │   ├── Tasks/                     #   ▸ PDF đề bài Lab
+    │   └── README.md                  #   ▸ Hướng dẫn chi tiết
+    │
+    ├── SyChiKhoi/                     # Workspace — Chí Khởi
+    │   ├── docs/                      #   ▸ Tài liệu & đề bài
+    │   ├── resources/                 #   ▸ Resource files (students.txt...)
+    │   └── src/Project/               #   ▸ Source code
+    │       ├── Lab02/                 #     ▸ Lab 02 — Đệ quy
+    │       ├── Lab03/                 #     ▸ Lab 03 — Greedy & Xấp xỉ
+    │       ├── Lab04/                 #     ▸ Lab 04 — Tìm kiếm
+    │       ├── Lab05/                 #     ▸ Lab 05 — Sắp xếp
+    │       └── Leetcode/              #     ▸ LeetCode practice
+    │
+    ├── TranHieu/                      # Workspace — Trần Hiếu
+    │   ├── tuan2/                     #   ▸ Tuần 2 — Đệ quy (C++)
+    │   ├── tuan3/                     #   ▸ Tuần 3 — Tìm kiếm
+    │   ├── tuan4/                     #   ▸ Tuần 4 — Sắp xếp
+    │   └── tuan5/                     #   ▸ Tuần 5 — Sắp xếp nâng cao
+    │
+    └── Trần Thành Đạt/                # Workspace — Thành Đạt
 ```
 
 ---
 
-## 📊 Lộ trình học tập & Tiến độ nhóm
+## 📊 Bảng tổng hợp thuật toán
 
-Chúng tôi cùng nhau bám sát lộ trình học tập để đảm bảo mọi thành viên đều nắm vững kiến thức:
+### Sắp xếp (Sorting)
 
-| Module | Nội dung trọng tâm | Trạng thái nhóm | Công nghệ |
-| :--- | :--- | :---: | :--- |
-| **Lab 01-03** | Basics & Flow Control | ✅ Đã hoàn thành | C (GCC) |
-| **Lab 04** | Modular Programming | 🚀 Đang triển khai | Header Files, Pointers |
-| **Lab 05** | Structs & Dynamic Memory | ⏳ Kế hoạch sắp tới | Heap Allocation |
-| **Algorithms** | Sort & Search | 📈 Đang cập nhật | Big O Analysis |
-| **LeetCode** | Group Solving | 🔄 Thực hiện mỗi ngày | Problem Solving |
+| Thuật toán | Best | Average | Worst | Space | Ổn định |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| **Bubble Sort** | O(n) | O(n²) | O(n²) | O(1) | ✅ |
+| **Selection Sort** | O(n²) | O(n²) | O(n²) | O(1) | ❌ |
+| **Insertion Sort** | O(n) | O(n²) | O(n²) | O(1) | ✅ |
+| **Binary Insertion Sort** | O(n) | O(n²) | O(n²) | O(1) | ✅ |
+| **Exchange Sort** | O(n²) | O(n²) | O(n²) | O(1) | ✅ |
+
+### Tìm kiếm (Searching)
+
+| Thuật toán | Best | Average | Worst | Yêu cầu |
+|:---|:---:|:---:|:---:|:---|
+| **Sequential Search** | O(1) | O(n) | O(n) | Không |
+| **Binary Search** | O(1) | O(log n) | O(log n) | Mảng đã sắp xếp |
+
+### Cấu trúc dữ liệu
+
+| Cấu trúc | Truy cập | Tìm kiếm | Chèn | Xóa |
+|:---|:---:|:---:|:---:|:---:|
+| **Mảng (Array)** | O(1) | O(n) | O(n) | O(n) |
+| **Danh sách liên kết** | O(n) | O(n) | O(1)* | O(n) |
+
+> *Chèn đầu danh sách liên kết: O(1)
 
 ---
 
-## 🛠 Hướng dẫn sử dụng
+## 🛠 Hướng dẫn biên dịch
 
-Bất kỳ ai cũng có thể biên dịch và chạy các bài tập trong dự án này bằng cách:
+### C — GCC Compiler
 
-### 1. Biên dịch
-Sử dụng GCC để tạo file thực thi cho các mã nguồn C:
 ```bash
-gcc -o program_name path/to/file.c -lm
+# Biên dịch
+gcc -o output_name path/to/file.c -lm
+
+# Biên dịch với cảnh báo
+gcc -Wall -Wextra -o output_name path/to/file.c -lm
+
+# Chạy
+./output_name
 ```
 
-### 2. Thực thi
+### C++ — G++ Compiler
+
 ```bash
-./program_name
+# Biên dịch
+g++ -std=c++17 -o output_name path/to/file.cpp
+
+# Chạy
+./output_name
+```
+
+### Java
+
+```bash
+# Biên dịch
+javac path/to/File.java
+
+# Chạy
+java -cp path/to File
+```
+
+### Ví dụ cụ thể
+
+```bash
+# Bài tập Sorting — Thái Bảo
+cd "src/Nguyễn Thái Bảo/03_Sorting"
+gcc baitap01_bubble_sort_gpa.c -o sort && ./sort
+
+# LeetCode Sorting — Chí Khởi
+cd src/SyChiKhoi/src/Project/Leetcode/Sort
+gcc bubble_sort.c -o bubble && ./bubble
+
+# Tuần 2 Đệ quy — Trần Hiếu (C++)
+cd src/TranHieu/tuan2
+g++ -std=c++17 bt1.cpp -o bt1 && ./bt1
 ```
 
 ---
 
-## 👥 Thành viên đóng góp
+## 📚 Tài liệu tham khảo
 
-Sự thành công của dự án này dựa trên sự đóng góp nhiệt huyết của:
+### Tài liệu nội bộ
 
-*   **Nguyễn Thái Bảo** - [Musual-Moncra](https://github.com/Musual-Moncra)
-*   **Sỳ Chí Khởi** - [SyChiKhoi](https://github.com/SyChiKhoi)
-*   **Trần Hiếu** - [Henryquy](https://github.com/Henryquy)
-*   **Trần Thành Đạt**
+| Tài liệu | Đường dẫn |
+|:---|:---|
+| Academic Documentation | `src/Nguyễn Thái Bảo/Documents/Academic_Documentation.md` |
+| Technical Notes | `src/Nguyễn Thái Bảo/Storage/Technical_Notes.md` |
+| Project Documentation | `src/Nguyễn Thái Bảo/Documents/Project_Documentation.md` |
+| Workspace README | `src/Nguyễn Thái Bảo/README.md` |
+
+### Tài liệu Lab (PDF)
+
+| Module | Nội dung |
+|:---|:---|
+| NMLT Labs | Cơ bản lập trình C (Lab 01–03) |
+| CTDL Lab 02 | Đệ quy (Recursion) |
+| CTDL Lab 03 | Tổng quan CTDL & GT |
+| CTDL Lab 04 | Tìm kiếm (Searching) |
+| CTDL Lab 05 | Sắp xếp (Sorting I) |
+| CTDL Lab 07 | Danh sách liên kết (Linked List) |
+
+---
+
+## 👥 Đội ngũ nghiên cứu
+
+| Thành viên | GitHub | Vai trò |
+|:---|:---|:---|
+| **Nguyễn Thái Bảo** | [@Musual-Moncra](https://github.com/Musual-Moncra) | Lead · Sorting & Linked Lists |
+| **Sỳ Chí Khởi** | [@SyChiKhoi](https://github.com/SyChiKhoi) | Contributor · Searching & LeetCode |
+| **Trần Hiếu** | [@Henryquy](https://github.com/Henryquy) | Contributor · Recursion & C++ |
+| **Trần Thành Đạt** | — | Contributor |
 
 ---
 
 ## 📜 Giấy phép
 
-Project này được phát hành dưới giấy phép **MIT License**.
+Dự án được phân phối dưới giấy phép **MIT License**. Xem file [LICENSE](LICENSE) để biết thêm chi tiết.
+
+---
 
 <div align="center">
-  <sub>Được phát triển với ❤️ bởi đội ngũ DSA Team | 2026</sub>
-</div>
+
+**DSA Academic Workspace** · Nơi tư duy gặp gỡ mã nguồn
+
+© 2026 DSA Team — Built with rigor and collaboration in mind.
+
+</div>
